@@ -31,7 +31,7 @@ identifier. This frees you from having to remember integer indexes,
 or resorting to workarounds like defining integer constants as
 mnemonics for your indexes.
 
-Page 130, [Python Tricks The Book A Buffet of Awesome Python Features](https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301)
+--- Page 130, [Python Tricks The Book A Buffet of Awesome Python Features](https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301)
 
 To create a namedtuple, we have to define a `typename` and define a name for each field and put the names into a list and pass it into `namedtyple` API. The fields are: `id` which is the ID of each fields in the form, `bbox` which is the bounding box points for each field and the last one is `filter-keywords` which is the words that we filter in order to OCR do not recognize them as inputs. The words of this section mostly contains of field names such as Name, Last Name, etc.
 
@@ -46,5 +46,20 @@ Or you can type the below command if you want to install this library in Anacond
 ```
 conda install -c anaconda mysql-connector-python
 ```
+After the installation, open up MySQL program and and create a Connection. Give it a name and a `password` and set the `user` to `root`, after that create a database:
+
+```sql
+CREATE DATABASE documents;
+```
+and select this database
+
+```sql
+USE documents;
+```
+after that create a table:
+
+```
+```
+
 
 
