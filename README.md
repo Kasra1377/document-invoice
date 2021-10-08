@@ -33,5 +33,18 @@ mnemonics for your indexes.
 
 Page 130, [Python Tricks The Book A Buffet of Awesome Python Features](https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301)
 
-The next step is to define
+To create a namedtuple, we have to define a `typename` and define a name for each field and put the names into a list and pass it into `namedtyple` API. The fields are: `id` which is the ID of each fields in the form, `bbox` which is the bounding box points for each field and the last one is `filter-keywords` which is the words that we filter in order to OCR do not recognize them as inputs. The words of this section mostly contains of field names such as Name, Last Name, etc.
+
+#### Database Connection
+The last step is the connection between SQL database and Python files. In this specific project I selected MySQL platform and in order to run this project on your local computer you have to download MySQL from this [link](https://dev.mysql.com/downloads/workbench/). In addition `my-sql.connector` library must be installed on your computer. In order to install it, open up your Command Prompt and type
+
+```
+pip install mysql-connector-pytho
+```
+Or you can type the below command if you want to install this library in Anaconda Prompt:
+
+```
+conda install -c anaconda mysql-connector-python
+```
+
 
