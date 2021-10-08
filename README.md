@@ -24,7 +24,7 @@ After you cloned this repository, you have to download and install the Anaconda.
 ```
 conda create -n scanner python=3.7
 ```
-This command creates a virtual env with a name of `verification`. Note that you can choose your own arbitrary name for virtual enviroment. After virtual enviroment is created,  switch to the directory of the project folder via Anaconda Prompt and then type:
+This command creates a virtual env with a name of `scanner`. Note that you can choose your own arbitrary name for virtual enviroment. After virtual enviroment is created,  switch to the directory of the project folder via Anaconda Prompt and then type:
 
 ```
 conda activate scanner
