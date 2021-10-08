@@ -117,6 +117,12 @@ mydb = mysql.connector.connect(
 ```
 After doing this, the installation is done and you are ready to run the project on your local computer. Please note that, you have to run the `main.py` python file in order to automate all of the process.
 
+After you run the program successfully go back to MySQL program and type:
+```sql
+SELECT * FROM documents;
+```
+As you can see the program succeessfully detected most of the fields.
+
 ### Result
 ---
 <p align="center">
