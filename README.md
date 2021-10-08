@@ -14,11 +14,11 @@ We will be going through into each these subcategories more deeply in the next s
 ---
 The Code is written in Python 3.7.5. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensure you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after cloning the repository:
 ```
-git@github.com:Kasra1377/face-verification-with-siamese-networks.git
+git@github.com:git@github.com:Kasra1377/document-invoice.git
 ```
 or
 ```
-git clone https://github.com/Kasra1377/face-verification-with-siamese-networks.git
+git clone https://github.com/Kasra1377/document-invoice.git
 ```
 After you cloned this repository, you have to download and install the Anaconda. You can find the download link from this [link](https://www.anaconda.com/products/individual). After the installation, open the Anaconda Prompt and type the code down below:
 ```
