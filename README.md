@@ -14,20 +14,20 @@ We will be going through into each these subcategories more deeply in the next s
 ---
 The Code is written in Python 3.7.5. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensure you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after cloning the repository:
 ```
-git clone git@github.com:Kasra1377/lbp-face-recognition.git
+git@github.com:Kasra1377/face-verification-with-siamese-networks.git
 ```
 or
 ```
-git clone https://github.com/Kasra1377/lbp-face-recognition.git
+git clone https://github.com/Kasra1377/face-verification-with-siamese-networks.git
 ```
 After you cloned this repository, you have to download and install the Anaconda. You can find the download link from this [link](https://www.anaconda.com/products/individual). After the installation, open the Anaconda Prompt and type the code down below:
 ```
-conda create -n verification python=3.7
+conda create -n scanner python=3.7
 ```
 This command creates a virtual env with a name of `verification`. Note that you can choose your own arbitrary name for virtual enviroment. After virtual enviroment is created,  switch to the directory of the project folder via Anaconda Prompt and then type:
 
 ```
-conda activate verification
+conda activate scanner
 ```
 This command activates your own virtual enviroment that you have just created. In order to install all of the libraries that used in this project, you have to type:
 
