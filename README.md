@@ -56,9 +56,18 @@ and select this database
 ```sql
 USE documents;
 ```
-after that create a table:
+after that create a table with a name of `documents`:
 
 ```
+CREATE TABLE documents (
+name VARCHAR(30),
+last_name VARCHAR(50),
+gender VARCHAR(6),
+email VARCHAR(50),
+city VARCHAR(30),
+state VARCHAR(30),
+zip_code VARCHAR(12),
+)
 ```
 
 
