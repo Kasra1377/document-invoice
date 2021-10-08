@@ -58,7 +58,7 @@ USE documents;
 ```
 after that create a table with a name of `documents`:
 
-```
+```sql
 CREATE TABLE documents (
 name VARCHAR(30),
 last_name VARCHAR(50),
