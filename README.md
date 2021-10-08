@@ -70,5 +70,17 @@ zip_code VARCHAR(12),
 )
 ```
 
+now go to the `record.py` file and change the password section of below script:
+
+```python
+mydb = mysql.connector.connect(
+    host="127.0.0.1",
+    user="root",
+    password="your password",
+    database="documents",
+)
+
+```
+After doing this, the installation is done and you are ready to run the project on your local computer. Please take note that, you have to run the `main.py` python file in order to automate all of the process.
 
 
