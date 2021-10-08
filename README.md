@@ -67,9 +67,10 @@ To create a namedtuple, we have to define a `typename` and define a name for eac
 
 ![OCR](demo/scanned-document.gif)
 
-Please note that you have to take photo from form in right position and ...
+Please note that the photo of the form must be taken in an appropriate position and photo must be taken in high resolution quality. Otherwise this program does not output accurate results.
+
 #### Database Connection
-The last step is the connection between SQL database and Python files. In this specific project I selected MySQL platform and in order to run this project on your local computer you have to download MySQL from this [link](https://dev.mysql.com/downloads/workbench/). In addition `my-sql.connector` library must be installed on your computer. In order to install it, open up your Command Prompt and type
+The last step is the connection between SQL database and Python files. In this specific project I selected MySQL platform and in order to run this project on your local computer you have to download MySQL from this [link](https://dev.mysql.com/downloads/workbench/). In addition `my-sql.connector` library must be installed on your computer. In order to install it, open up your Command Prompt and type:
 
 ```
 pip install mysql-connector-pytho
