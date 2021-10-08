@@ -45,6 +45,8 @@ This is the most important step in this project. Because it contains image prepr
 
 To start by, first the input image is passed into program, then [lsd](https://github.com/primetang/pylsd) module detects the boundary lines in the image. Then boundaries will be divided into horizontal
 
+![Scan](demo/OCR'ed-document.gif)
+
 #### OCR'ing The Scanned Image
 The next important step is to read the document fields. To do so,we use `Pytesseract` program to reach our purpose. You can download the Pytesseract installer via this [link](https://github.com/UB-Mannheim/tesseract/wiki). In order to complete this task, we defined two functions; `clearup_text` to omit words that OCR can not read them and `documentOCR`. In this function we utilized `namedtuples` for grouping objects without defining a class. This is one of the important feartures that Python has.
 
@@ -61,6 +63,9 @@ mnemonics for your indexes.
 
 To create a namedtuple, we have to define a `typename` and define a name for each field and put the names into a list and pass it into `namedtyple` API. The fields are: `id` which is the ID of each fields in the form, `bbox` which is the bounding box points for each field and the last one is `filter-keywords` which is the words that we filter in order to OCR do not recognize them as inputs. The words of this section mostly contains of field names such as Name, Last Name, etc.
 
+![OCR](demo/scanned-document.gif)
+
+Please note that you have to take photo from form in right position and ...
 #### Database Connection
 The last step is the connection between SQL database and Python files. In this specific project I selected MySQL platform and in order to run this project on your local computer you have to download MySQL from this [link](https://dev.mysql.com/downloads/workbench/). In addition `my-sql.connector` library must be installed on your computer. In order to install it, open up your Command Prompt and type
 
@@ -116,13 +121,10 @@ After doing this, the installation is done and you are ready to run the project 
 
 **Language(s):**  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-**Libraries:**  ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)  ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+**Libraries:**  ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)  ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)  ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+    ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 
-**Front-End:**  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
-**Backend:**  ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-
-**Others:** ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+**Database(s):**  ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### ❌Bugs & Issues
 ---
