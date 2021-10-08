@@ -43,7 +43,7 @@ By doing this and downloading all of the required packages, you are ready to run
 #### Image Scanning
 This is the most important step in this project. Because it contains image preprocessing step and without appropriate preprocessing we are not able to get appropriate results. Our image preprocessing steps contains of: `contour detection`, `morphological operations` and `image sharpening`. Thanks to this [repository](https://github.com/andrewdcampbell/OpenCV-Document-Scanner) most of the programming steps is done.
 
-To start by, first the input image is passed into program, then [lsd](https://github.com/primetang/pylsd) module detects the boundary lines in the image. Then boundaries will be divided into horizontal
+If you want to gain more information from image processing steps, please refere to `document_validation.py` and `document_scanner.py` files.
 
 ![Scan](demo/OCR'ed-document.gif)
 
