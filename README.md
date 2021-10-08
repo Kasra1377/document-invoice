@@ -120,10 +120,10 @@ After doing this, the installation is done and you are ready to run the project 
 ### Result
 ---
 <p align="center">
-  <img width="500" height="300" src="demo/SQL-database.PNG">
+  <img width="900" height=500" src="demo/SQL-database.PNG">
 </p>
-r 
-As this picture shows, this program detects most of the input fields from different forms successfully but some of them are incorrect mainly because of two reasons: The picture of the input form was no taken in an appropriate position and the second reason is the performance of Pytesseract. Pytesseract some times and in some situations does not detect texts properly.
+ 
+As this picture shows, this program successfully detects most of the fields from different documents but some of them are incorrect mainly because of two reasons: The picture of the input form was not taken in an appropriate position and the second reason is the performance of Pytesseract. Pytesseract some times and in some situations does not detect texts properly.
 
 ### 🛠Technologies Used
 ---
