@@ -1,0 +1,5 @@
+numpy==1.19.5
+scipy==1.7.1
+imutils==0.5.4
+imutils==0.5.4
+mysql-connector-python==2.2
