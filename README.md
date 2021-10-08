@@ -80,17 +80,17 @@ Or you can type the below command if you want to install this library in Anacond
 ```
 conda install -c anaconda mysql-connector-python
 ```
-After the installation, open up MySQL program and and create a Connection. Give it a name and a `password` and set the `user` to `root`, after that create a database:
+After the installation, open up MySQL program and and create a Connection. Give it a name and a `password` and set the `user` to `root`. After that create a database:
 
 ```sql
 CREATE DATABASE documents;
 ```
-and select this database
+And select this database:
 
 ```sql
 USE documents;
 ```
-after that create a table with a name of `documents`:
+After that create a table with a name of `documents`:
 
 ```sql
 CREATE TABLE documents (
@@ -104,7 +104,7 @@ zip_code VARCHAR(12),
 )
 ```
 
-now go to the `record.py` file and change the password section of below script:
+Now go to the `record.py` file and change the password of below script:
 
 ```python
 mydb = mysql.connector.connect(
@@ -115,7 +115,15 @@ mydb = mysql.connector.connect(
 )
 
 ```
-After doing this, the installation is done and you are ready to run the project on your local computer. Please take note that, you have to run the `main.py` python file in order to automate all of the process.
+After doing this, the installation is done and you are ready to run the project on your local computer. Please note that, you have to run the `main.py` python file in order to automate all of the process.
+
+### Result
+---
+<p align="center">
+  <img width="500" height="300" src="demo/SQL-database.PNG">
+</p>
+r 
+As this picture shows, this program detects most of the input fields from different forms successfully but some of them are incorrect mainly because of two reasons: The picture of the input form was no taken in an appropriate position and the second reason is the performance of Pytesseract. Pytesseract some times and in some situations does not detect texts properly.
 
 ### 🛠Technologies Used
 ---
