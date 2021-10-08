@@ -10,14 +10,6 @@ The second section is to define the OCR funcion to grab the preprocessed form an
 
 We will be going through into each these subcategories more deeply in the next section.
 
-### 🛠Project Structure
----
-
-#### Image Scanning
-This is the most important step in this project. Because it contains image preprocessing step and without appropriate preprocessing we are not able to get appropriate results. Our image preprocessing steps contains of: `contour detection`, `morphological operations` and `image sharpening`. Thanks to this [repository](https://github.com/andrewdcampbell/OpenCV-Document-Scanner) most of the programming steps is done.
-
-To start by, first the input image is passed into program, then [lsd](https://github.com/primetang/pylsd) module detects the boundary lines in the image. Then boundaries will be divided into horizontal
-
 ### 🖥 Installation
 ---
 The Code is written in Python 3.7.5. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensure you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after cloning the repository:
@@ -44,6 +36,14 @@ conda install file requirements.txt
 ```
 
 By doing this and downloading all of the required packages, you are ready to run this project on your local computer.
+
+### 🛠Project Structure
+---
+
+#### Image Scanning
+This is the most important step in this project. Because it contains image preprocessing step and without appropriate preprocessing we are not able to get appropriate results. Our image preprocessing steps contains of: `contour detection`, `morphological operations` and `image sharpening`. Thanks to this [repository](https://github.com/andrewdcampbell/OpenCV-Document-Scanner) most of the programming steps is done.
+
+To start by, first the input image is passed into program, then [lsd](https://github.com/primetang/pylsd) module detects the boundary lines in the image. Then boundaries will be divided into horizontal
 
 #### OCR'ing The Scanned Image
 The next important step is to read the document fields. To do so,we use `Pytesseract` program to reach our purpose. You can download the Pytesseract installer via this [link](https://github.com/UB-Mannheim/tesseract/wiki). In order to complete this task, we defined two functions; `clearup_text` to omit words that OCR can not read them and `documentOCR`. In this function we utilized `namedtuples` for grouping objects without defining a class. This is one of the important feartures that Python has.
