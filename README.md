@@ -42,7 +42,7 @@ By doing this and downloading all of the required packages, you are ready to run
 
 #### Image Scanning
 
-It is the most important step in this project. Because it contains an image preprocessing step. Without appropriate preprocessing operations, we are not able to get appropriate results. Our image preprocessing steps mostly contain: `contour detection`, `morphological operations`, and `image sharpening`. Thanks to this [repository](https://github.com/andrewdcampbell/OpenCV-Document-Scanner) most of the programming steps already is done.
+It is the most important step in this project. Because it contains an image preprocessing step. Without appropriate preprocessing operations, we are not able to get appropriate results. Our image preprocessing steps mostly contain `contour detection`, `morphological operations`, and `image sharpening`. Thanks to this [repository](https://github.com/andrewdcampbell/OpenCV-Document-Scanner) most of the programming steps already is done.
 
 If you want to gain more information from the image processing steps, please refer to `document_validation.py` and `document_scanner.py` files.
 
@@ -63,7 +63,7 @@ mnemonics for your indexes.
 
 --- Page 130, [Python Tricks The Book A Buffet of Awesome Python Features](https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features/dp/1775093301)
 
-To create a namedtuple, we have to define a `typename` and define a name for each field, put the names into a list, and pass it into the `namedtyple` API. The fields are: `id`, which is the ID of each field in the form, `bbox`, which is the bounding box points for each field and the last one is `filter-keywords`, which is the words that we filter in order to OCR do not recognize them as inputs. The words of this section mostly contain field names such as Name, Last Name, etc.
+To create a namedtuple, we have to define a `typename` and define a name for each field, put the names into a list, and pass it into the `namedtyple` API. The fields are: `id`, which is the ID of each field in the form, `bbox`, which is the bounding box points for each field and the last one is `filter-keywords`, which contains the words that we filter in order to OCR do not recognize them as inputs. The words of this section mostly contain field names such as Name, Last Name, etc.
 
 ![OCR](demo/scanned-document.gif)
 
